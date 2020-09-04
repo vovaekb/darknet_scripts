@@ -27,7 +27,7 @@ def main(argv):
 
     prev_line = ""
     for line in lines:
-        args = line.split(' ')
+        args = line.lstrip().split(' ')
         if args[0][-1:]==':' and args[0][0] in numbers :
             iters.append(int(args[0][:-1]))            
             loss.append(float(args[2]))
