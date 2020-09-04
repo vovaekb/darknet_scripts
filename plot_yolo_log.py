@@ -38,9 +38,11 @@ def main(argv):
     plt.grid()
 
     ticks = range(0,250,10)
+
+    plt.savefig('loss_plot.jpg')
     
     #ax.set_yticks(ticks)
-    plt.show()
+    #plt.show()
     
 if __name__ == "__main__":
     main(sys.argv)
